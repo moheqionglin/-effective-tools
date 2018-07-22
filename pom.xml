@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.moheqiongin</groupId>
+    <artifactId>effective-tools</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>effective-tools</name>
+    <url>http://maven.apache.org</url>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.squareup</groupId>
+                <artifactId>javapoet</artifactId>
+                <version>1.7.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/javassist/javassist -->
+            <dependency>
+                <groupId>javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>3.12.1.GA</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.squareup.retrofit/retrofit -->
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>2.0.0-beta4</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson -->
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>converter-gson</artifactId>
+                <version>2.0.0-beta4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>3.8.1</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>effective-tool-javassist</module>
+        <module>effective-tool-javapoet</module>
+        <module>effective-tool-retrofit</module>
+    </modules>
+</project>
